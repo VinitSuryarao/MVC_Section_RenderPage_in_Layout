@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+
+    @*Header Section*@
+    <header style="background-color:yellowgreen">
+        <div>
+            This is Header  @RenderSection("headerSection", required: true)
+            @RenderPage("~/Views/Home/Index2.cshtml","Vinit",9967566751)
+        </div>
+    </header>
+
+    @*Child Page Render Body*@
+    <div> @RenderBody()</div>
+
+    @*Footer Section*@
+    <footer style="background-color:orange">
+        <div>
+            This is Header  @RenderSection("footerSection", required: true)
+        </div>
+    </footer>
+    
+
+</body>
+</html>
